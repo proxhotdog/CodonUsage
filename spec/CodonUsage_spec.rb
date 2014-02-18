@@ -23,4 +23,7 @@ describe CodonUsage::KazusaDB do
     it "#to_json working?" do
         p CodonUsage::KazusaDB.new(species: "83332").to_json
     end
+    it "#getCodonTable working?" do
+        p CodonUsage::KazusaDB.new(species: "83332").getCodonTable
+    end
 end

@@ -1,5 +1,14 @@
 # CodonUsage
-A ruby gem that parse Codon Usage table provided by: http://www.kazusa.or.jp/codon/
+A ruby gem that parses Codon Usage table provided by: http://www.kazusa.or.jp/codon/ that output the information in a hash or JSON forma formatt
+
+## Version
+    0.0.3
+
+## Disclaimer
+I write this gem because bioruby doesn't provide any library for me to do this job, and this is my first ruby gem. Hope this gem can help people in the bioinformatics field! :)
+
+## Before start
+    * Please use Ruby 1.9.3 or above
 
 ## Installation
     $ gem install CodonUsage
@@ -10,10 +19,11 @@ A ruby gem that parse Codon Usage table provided by: http://www.kazusa.or.jp/cod
     p foo.getURL
     p foo.getHash
     p foo.to_json
+    p foo.getCodonTable
 
-for species, "9606" is homo sapiens ID.
+for the argument "species", default value = "9606" which is the ID of Homo sapiens (Human).
 
-for aa, it is the codon translation table, default = "1":
+for the arguement "aa", it is the genetic code, default value = "1":
 * 1: Standard
 * 2: Vertebrate Mitochondrial
 * 3: Yeast Mitochondrial
@@ -27,7 +37,6 @@ for aa, it is the codon translation table, default = "1":
 * 13: Ascidian Mitochondrial
 * 14: Flatworm Mitochondrial
 * 15: Blepharisma Nuclear Code
-
 
 ## Contributing
 
