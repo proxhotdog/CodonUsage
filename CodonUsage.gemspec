@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["hotdogcheng@gmail.com"]
   spec.summary       = %q{A ruby gem that parses codon table from http://www.kazusa.or.jp/codon}
   spec.description   = %q{A ruby gem that parses codon table from http://www.kazusa.or.jp/codon and turn it to hash or JSON}
-  spec.homepage      = "https://github.com/proxhotdog/CodonTable"
-  spec.license       = "GPLv3"
+  spec.homepage      = "https://github.com/proxhotdog/CodonUsage"
+  spec.license       = "GPL v3"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }

@@ -23,7 +23,7 @@ I write this gem because bioruby doesn't provide any library for me to do this j
 
 for the argument "species", default value = "9606" which is the ID of Homo sapiens (Human).
 
-for the arguement "aa", it is the genetic code, default value = "1":
+for the arguement "aa", it is the genetic code, default value = "1", for other values, please refer to the following list:
 * 1: Standard
 * 2: Vertebrate Mitochondrial
 * 3: Yeast Mitochondrial

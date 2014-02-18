@@ -8,20 +8,7 @@ require "json"
 
 module CodonUsage
     class KazusaDB
-        def initialize(host: "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=", aa: "1", species: "9606")
-            #1: Standard
-            #2: Vertebrate Mitochondrial
-            #3: Yeast Mitochondrial
-            #4: Mold, Protozoan, Coelenterate Mitochondrial and Mycoplasma/Spiroplasma
-            #5: Invertebrate Mitochondrial
-            #6: Ciliate Macronuclear and Dasycladacean
-            #9: Echinoderm Mitochondrial
-            #10: ALternative Ciliate Macronuclear
-            #11: Eubacterial
-            #12: Alternative Yeast
-            #13: Ascidian Mitochondrial
-            #14: Flatworm Mitochondrial
-            #15: Blepharisma Nuclear Code
+        def initialize(host: "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=", aa: "1", species: "9606") # for default values of the arugments, please refer to README.md
             @url = "#{host}#{species}&aa=#{aa}&style=N"
             @codonPreferenceTable = {}
             @codonTable = {}
