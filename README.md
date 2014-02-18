@@ -1,29 +1,17 @@
 # CodonUsage
 A ruby gem that parse Codon Usage table provided by: http://www.kazusa.or.jp/codon/
 
-
-
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'CodonUsage'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install CodonUsage
 
 ## Usage
-    require "CodonUsage"
-    foo = CodonUsage::KazusaDB.new(aa = "1", species = "9606")
+    require "CodonUsage" # load the gem
+    foo = CodonUsage::KazusaDB.new(aa = "1", species = "9606") # Noted that parameters should be STRING
     p foo.getURL
     p foo.getHash
-    p foo.toJSON
+    p foo.to_json
 
+for species, "9606" is homo sapiens ID.
 
 for aa, it is the codon translation table, default = "1":
 * 1: Standard
@@ -39,7 +27,6 @@ for aa, it is the codon translation table, default = "1":
 * 13: Ascidian Mitochondrial
 * 14: Flatworm Mitochondrial
 * 15: Blepharisma Nuclear Code
-
 
 
 ## Contributing
