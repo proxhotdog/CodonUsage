@@ -1,8 +1,8 @@
 # CodonUsage
-A ruby gem that parses Codon Usage table provided by: http://www.kazusa.or.jp/codon/ that output the information in a hash or JSON forma formatt
+A ruby gem that parses Codon Usage table provided by: http://www.kazusa.or.jp/codon/ that output the information in a hash or JSON format. You can find this gem on http://rubygems.org/gems/CodonUsage
 
 ## Version
-    0.0.3
+    0.0.4
 
 ## Disclaimer
 I write this gem because bioruby doesn't provide any library for me to do this job, and this is my first ruby gem. Hope this gem can help people in the bioinformatics field! :)
