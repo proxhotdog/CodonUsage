@@ -17,6 +17,9 @@ describe CodonUsage::KazusaDB do
     it "#species:Mycobacterium tuberculosis H37Rv" do
         CodonUsage::KazusaDB.new(species: "83332").getURL.should == "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=83332&aa=1&style=N"
     end
+    it "#species: \"83332\" + #aa: \"11\"" do
+        CodonUsage::KazusaDB.new(aa: "11", species: "83332").getURL.should == "http://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=83332&aa=11&style=N"
+    end
     it "#getHash working?" do
         p CodonUsage::KazusaDB.new(species: "83332").getHash
     end

@@ -2,20 +2,20 @@
 A ruby gem that parses Codon Usage table provided by: http://www.kazusa.or.jp/codon/ that output the information in a hash or JSON format. You can find this gem on http://rubygems.org/gems/CodonUsage
 
 ## Version
-    0.0.4
+    0.0.5
 
 ## Disclaimer
 I write this gem because bioruby doesn't provide any library for me to do this job, and this is my first ruby gem. Hope this gem can help people in the bioinformatics field! :)
 
 ## Before start
-    * Please use Ruby 1.9.3 or above
+    * Please use Ruby 2.0 or above
 
 ## Installation
     $ gem install CodonUsage
 
 ## Usage
     require "CodonUsage" # load the gem
-    foo = CodonUsage::KazusaDB.new(aa = "1", species = "9606") # Noted that parameters should be STRING
+    foo = CodonUsage::KazusaDB.new(aa: "1", species: "9606") # Noted that parameters should be STRING
     p foo.getURL
     p foo.getHash
     p foo.to_json
